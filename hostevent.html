@@ -51,6 +51,8 @@
                 <!-- <span>Business Name</span> -->
             </label> 
 
+            
+
             <label class="input">
                 <select id="venue" name="venue" required>
                     <option value="" disabled selected hidden>Type of venue</option>
@@ -63,14 +65,25 @@
                 </select>
             </label>
 
-            <!-- <label class="input" for="location">Location:</label>
-            <input type="text" id="location" name="location" required/> -->
+            <label>
+                <input required="" placeholder="Date of Event" type="text" class="input">
+            </label> 
+
+        
             <label>
                 <input required="" placeholder="Location" type="text" class="input">
             </label> 
 
             <label>
                 <input required="" placeholder="Number of Tables" type="text" class="input">
+            </label> 
+
+            <label>
+                <input required="" placeholder="Rate" type="text" class="input">
+            </label> 
+
+            <label>
+                <input required="" placeholder="Intrests" type="text" class="input">
             </label> 
 
             <div class="container">
@@ -97,17 +110,8 @@
 
                     <input type="checkbox" id="freezer" class="amenity-checkbox">
                     <label for="freezer" class="amenity-label">Freezer</label>
-                    <!-- <input type="checkbox" id="wifi" class="amenity-checkbox">
-                    <label for="wifi" class="amenity-label">Wi-Fi</label>
-
-                    <input type="checkbox" id="Outlets" class="amenity-checkbox">
-                    <label for="outlets" class="amenity-label">Outlets</label> -->
+                   
                 </div>
-
-                <!-- <div class="custom-amenity">
-                    <label for="custom">Other Amenity:</label>
-                    <input type="text" id="custom" placeholder="Enter custom amenity">
-                </div> -->
             </div>
 
 
@@ -142,28 +146,81 @@
           </button>
     </div>
 
-    <script>
-        document.getElementById("venueform").addEventListener("post", function(event){
-            
-            const businessName = document.getElementById("businessName").value;
-            const venueType = document.getElementById("venueType").value;
-            const location = document.getElementById("location").value;
-            const tables = document.getElementById("tables").value;
-            const imageLink = document.getElementById("imageLink").value;
-
-           
-            const venueData = {
-                businessName,
-                venueType,
-                location,
-                tables,
-                imageLink
-            };
-
-            localStorage.setItem("venueData", JSON.stringify(venueData));
-            window.location.href = "display.html";
-
+    <!-- <script>
+        document.querySelector(".postbutton button").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            // Get values from form
+            const businessName = document.querySelector("[placeholder='Business Name']").value;
+            const rate = document.querySelector("[placeholder='Rate']").value;
+            const interests = document.querySelector("[placeholder='Intrests']").value;
+            const location = document.querySelector("[placeholder='Location']").value;
+            const dates = document.querySelector("[placeholder='Date of Event']").value;
+            const imageLink = document.querySelector("[placeholder='Image Link']").value;
+    
+            if (!businessName || !rate || !interests || !location || !dates || !imageLink) {
+                alert("Please fill out all fields before posting.");
+                return;
+            }
+    
+            // Create text file content
+            const fileContent = `Business Name: ${businessName}
+    Rate: ${rate}
+    Interests: ${interests}
+    Location: ${location}
+    Dates Available: ${dates}
+    Image Link: ${imageLink}`;
+    
+            // Create a Blob (Binary Large Object)
+            const blob = new Blob([fileContent], { type: "text/plain" });
+    
+            // Create a download link
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "venue_submission.txt";
+    
+            // Auto-click the link to start download
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+    
+            // Redirect to `vendorfacing.html` after download
+            setTimeout(() => {
+                window.location.href = "vendorfacing.html";
+            }, 500);
         });
+    </script> -->
+
+    <script>
+        document.querySelector(".postbutton button").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get values from form
+    const businessName = document.querySelector("[placeholder='Business Name']").value;
+    const rate = document.querySelector("[placeholder='Rate']").value;
+    const interests = document.querySelector("[placeholder='Intrests']").value;
+    const location = document.querySelector("[placeholder='Location']").value;
+    const dates = document.querySelector("[placeholder='Date of Event']").value;
+    const imageLink = document.querySelector("[placeholder='Image Link']").value;
+
+    if (!businessName || !rate || !interests || !location || !dates || !imageLink) {
+        alert("Please fill out all fields before posting.");
+        return;
+    }
+
+    // Retrieve existing venues from localStorage or create an empty array
+    let venues = JSON.parse(localStorage.getItem("venues")) || [];
+
+    // Add new venue to the array
+    venues.push({ businessName, rate, interests, location, dates, imageLink });
+
+    // Store updated array back in localStorage
+    localStorage.setItem("venues", JSON.stringify(venues));
+
+    // Redirect to `vendorfacing.html`
+    window.location.href = "vendorfacing.html";
+});
+
     </script>
 
 

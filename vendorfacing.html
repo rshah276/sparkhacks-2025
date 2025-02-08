@@ -52,6 +52,9 @@
 
     </div>
 
+
+    <!-- START OF CARD STUFF -->
+
     <div class="container">
 
 
@@ -236,9 +239,83 @@
                 </div>
             </div>
 
+            <div class="container">
+                <div class="all-cards" id="cardContainer">
+                    <!-- New venue cards will be added here -->
+                </div>
+            </div>
+
         </div>
     </div>
 
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const cardContainer = document.getElementById("cardContainer");
+
+    // Retrieve all stored venues
+    let venues = JSON.parse(localStorage.getItem("venues")) || [];
+
+    // Create a card for each venue
+    venues.forEach(createCard);
+});
+
+function createCard(card) {
+    const cardContainer = document.getElementById("cardContainer");
+
+    // Create the card element
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("content");
+
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card");
+
+    // Basic Info Section (Image)
+    const basicInfoDiv = document.createElement("div");
+    basicInfoDiv.classList.add("basic-info");
+    const img = document.createElement("img");
+    img.src = card.imageLink;
+    img.alt = "Venue Image";
+    basicInfoDiv.appendChild(img);
+
+    // Title (Business Name)
+    const title = document.createElement("h2");
+    title.classList.add("a");
+    title.textContent = card.businessName;
+
+    // Information Section
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("info");
+
+    infoDiv.innerHTML = `
+        <p><strong>Rate:</strong> ${card.rate}</p>
+        <p><strong>Interests:</strong> ${card.interests}</p>
+        <p><strong>Location:</strong> ${card.location}</p>
+        <p><strong>Dates Available:</strong> ${card.dates}</p>
+    `;
+
+    // Message Button
+    const messageDiv = document.createElement("div");
+    messageDiv.classList.add("message");
+    const messageButton = document.createElement("button");
+    messageButton.textContent = "Message";
+    messageDiv.appendChild(messageButton);
+
+    // Append elements to card
+    cardDiv.appendChild(basicInfoDiv);
+    cardDiv.appendChild(title);
+    cardDiv.appendChild(infoDiv);
+    cardDiv.appendChild(messageDiv);
+
+    // Append card to content container
+    contentDiv.appendChild(cardDiv);
+    cardContainer.appendChild(contentDiv);
+}
+
+    </script>
+
+
+     
     
 
     <script src="vendor.js"></script> 
