@@ -76,8 +76,8 @@ button {
     width: 200px; /* Adjust width as needed */
     height: 30px;
     border-radius: 50px;
-    background-color: #a5c896;
-    border: solid #a5c896;
+    background-color: rgba(0, 151, 19, 0.1);
+    border: solid rgba(0, 151, 19, 0.1);
     font-family: 'ABeeZee';
     color: #554542;
     background: rgba(0, 151, 19, 0.1);
