@@ -5,10 +5,6 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-
-
-
-
 .card img {
     width: 200px; 
     height: 200px;
@@ -67,6 +63,7 @@ body{
 .container {
     display: flex;
     height: 100vh;
+   
     
 }
 
@@ -75,6 +72,7 @@ body{
     background-color: #b3d8b3;
     padding: 20px;
     position: relative;
+    height: 100%;
 }
 
 .sidebar ul {
