@@ -1,0 +1,379 @@
+/* Pink - #e56970
+Peach - #f8937a
+Cream - #FFFBF4
+Sage - #a5c896
+Brown - #554542 */
+
+body{
+    padding-bottom: 50px;
+    background-color: #FFFBF4;
+    margin: 0; 
+}
+
+.titlebox{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sitetitle{
+    
+    font-family: 'Playfair Display';
+    color: #554542;
+    font-size: 50px;
+    width: 750px;
+    text-align: center;
+
+}
+
+.titlebox{
+    background-color: #FFFBF4;
+    color: #554542;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+
+/* form  */
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* select {
+    display: block;
+    margin-bottom: 10px;
+    border:none;
+    border-radius: 5px;
+    background-color: #ffffffff;
+} */
+
+/* Style select field */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    color: #888; /* Set text color to match input placeholder */
+}
+
+/* Style the first option to look like a placeholder */
+select option[value=""] {
+    color: #aaa; /* Match the input placeholder color */
+}
+
+/* Ensure color changes when selecting another option */
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    color: #888; /* Ensure selected text appears black */
+}
+
+/* Change the dropdown text color when selecting an option */
+select option {
+    color: #888; /* Ensures normal options appear black */
+}
+
+fieldset {
+  border: none;
+  align-items: center;
+  
+}
+
+
+/* form { */
+    /* background-color:	#f0eeee; */
+    /* background-color:  #a5c896;
+    width: 600px;
+    padding: 20px;
+    border-radius: 8px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) */
+/* } */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 350px; */
+    width: 600px;
+    background-color: transparent;
+    border-color: #F8937A;
+    border-style: solid;
+    border-width: 3px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    
+  }
+
+.form {
+    display: flex;
+    /* center horizontally */
+    justify-content: center; 
+     /* center vertically */
+    align-items: center;
+
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #F8937A;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'ABeeZee';
+}
+
+select:focus {
+    border-color: #ccc;
+    outline: none;
+    font-family: 'ABeeZee';
+}
+
+label.input {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    background: transparent;
+    font-family: 'ABeeZee';
+}
+
+
+.container {
+    /* display: flex;
+    flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    /* width: 150px; /* Fixed width for consistent size */
+    /* height: 40px; */ 
+}
+
+.amenitieschecklist {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center items */
+    max-width: 850px; /* Adjust width as needed */
+}
+
+
+.amenity-label {
+    font-family: 'ABeeZee';
+    display: inline-flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+    color: #FFFBF4;
+    background-color:  #a5c896;
+    min-width: 50px; /* Fixed width for consistent size */
+    height: 30px;
+    /* padding: 10px 15px; */
+    border-radius: 5px;
+    border: 2px solid  #a5c896;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 7px;
+
+}
+
+input[type="text"] {
+    background: transparent;
+    font-family: 'ABeeZee';
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: 2px solid #F8937A;
+    border-radius: 5px;
+}
+
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 180px; /* Adjust width as needed */
+}
+
+.amenity-label:hover {
+
+    background-color: #77ab61;
+}
+
+.amenity-checkbox {
+    
+    display: none; /* Hide default checkbox */
+}
+
+.amenity-checkbox:checked + .amenity-label {
+    background-color: #6b9f54;
+    color: white;
+    border-color: #4CAF50;
+}
+
+.custom-amenity {
+    margin-top: 15px;
+}
+
+/* Post button */
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f8937a;
+    background-color: transparent;
+    /* background:  #f8937a; */
+    /* border: 1px solid transparent; */
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'ABeeZee';
+}
+
+button:hover {
+    background: #f8937a;
+    color:  #FFFBF4;
+}
+
+button > svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover svg {
+    transform: translateX(5px); 
+    fill:  #FFFBF4;
+    /* stroke:  #FFFBF4; */
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.postbutton {
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+/* Navbar  */
+.main-link{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: #FFFBF4;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.main-link:hover {
+    color: #47352D;
+}
+
+.sub-links{
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.logo-and-name{
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: #F8937A;
+    color: #FFFBF4;
+}
+
+.small-links{
+    padding-left: 20px;
+    color: #FFFBF4;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: 'ABeeZee';
+}
+
+.small-links:hover {
+    color: #47352D;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8937a;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.footer-site-name {
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #FFFBF4;
+    margin-top: 0px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerlink {
+    font-size: 18px;
+    color: #FFFBF4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'ABeeZee';
+}
+
+.footerlink:hover {
+    color: #47352D;
+}
+
+.logo2{
+    width: 100px;
+    margin-bottom: 15px;
+}
+

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Popup Connect</title>
+    <link rel="stylesheet" href="vendorfacing.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-and-name">
+            <a class="main-link" href="index.html"><img class="logo" src="src/logo.png"> </a>
+        </div>
+    
+        <div class="sub-links">
+            <a class="small-links" href="hostevent.html">Host</a>
+            <a class="small-links" href="vendorfacing.html">Vend</a>
+            <a class="small-links" href="attendee.html">Community</a>
+            <a class="small-links" href="about.html">About</a>
+        </div>
+    </nav>
+
+    <div class="button-container">
+
+        <div class="dropdown">
+            <button onclick="myFunction1()" class="dropbtn">Venue Type</button>
+            <div id="myDropdown1" class="dropdown-content">
+                <button class="filter-button">Cafe</button>
+                <button class="filter-button">Bookstore</button>
+                <button class="filter-button">Flower Shop</button>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn">Price</button>
+            <div id="myDropdown2" class="dropdown-content">
+                <button class="filter-button">$10-$20</button>
+                <button class="filter-button">$20-$50</button>
+                <button class="filter-button">$50+</button>
+              </div>
+        </div>
+        <div class="dropdown"> 
+            <button onclick="myFunction3()" class="dropbtn">Dates</button>
+            <div id="myDropdown3" class="dropdown-content">
+                <button class="filter-button">Now-3 Weeks</button>
+                <button class="filter-button">3 - 6 Weeks</button>
+                <button class="filter-button">6 Weeks+</button>
+              </div>
+        </div>
+
+    </div>
+
+
+    <!-- START OF CARD STUFF -->
+
+    <div class="container">
+        <div class = "all-cards">
+
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                    <img src="https://today.uic.edu/wp-content/uploads/2017/11/IMG_1441.jpg" alt="Cafe Image">
+                    </div>
+                    <h2 class ="a">Ground up Cafe</h2>
+                    <div class="info">
+                        <p >Rate: $150</p>
+                        <p>Interest Books, Literature, Art</p>
+                        <p>Location: 900 W Buren St, Chicago</p>
+                        <p>Dates Available: 03/01 - 03/17</p>
+                        
+                    </div>
+                    <div class="message">
+                        <button onClick="openForm()">Message</button>
+                        <div id="myForm">
+                            <div style = "background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 50%; border-radius: 20px; border-color:#F8937A ;">
+                              <form>
+                               
+                                <label for="name">Name:</label><br>
+                                <input type="text" id = "name" name="name" style="width:200px"><br><br>
+                                <label for="message">Email:</label><br>
+                               
+
+                                <textarea id="message" name="message" style="width: 100%; height: 100px; resize: vertical;"></textarea><br><br>
+                                <button type="submit">Submit</button>
+                                <button type="button" onclick="closeForm()">Close</button>
+                              </form>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+        
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                    <img src="https://images.squarespace-cdn.com/content/v1/64a837cca1e40f159e149962/2a31e17c-e922-4a65-b0f1-c6a76610081f/Gathers_interior_sandynoto_2.jpg" alt="Cafe Image">
+                    </div>
+                    <h2 class ="a">Gathers Tea Bar</h2>
+                    <div class="info">
+                        <p >Rate: $170</p>
+                        <p >Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 124 S Taylor St, Chicago</p>
+                        <p >Dates Available: 02/15 - 02/21</p>
+                        
+                    </div>
+                    
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                        <img src="https://mspmag.com/downloads/61859/download/image002.jpg?cb=de465bc50a9e5635ec2a607d7d4f453c&w=1280">
+                    </div>
+                    
+                    <h2 class ="a">Lily Bloom's</h2>
+                    <div class="info">
+                        <p>Rate: $190</p>
+                        <p>Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 900 W Rasleen, Chicago</p>
+                        <p >Dates Available: 02/13 - 02/19</p>
+                    </div>
+                
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                        <img src="https://i0.wp.com/thechicagogoodlife.com/wp-content/uploads/2024/01/2022-04-19-10.21.00-991x1200.jpg?ssl=1">
+
+                    </div>
+                    
+                    <h2 class ="a">Bob's Bookstore</h2>
+                    <div class="info">
+                        <p >Rate: $200</p>
+                        <p >Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 915 S Eman, Chicago</p>
+                        <p >Dates Available: 02/13 - 02/19</p>
+                        
+                    </div>
+                    
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/QzIpOGe1hjjN7UcdNFd9YQ/348s.jpg">
+
+                    </div>
+                    
+                    <h2 class ="a">Two Shades Cafe</h2>
+                    <div class="info">
+                        <p >Rate: $147</p>
+                        <p >Interest: Books, Jewelry, Arts </p>
+                        <p>Location: 121 Taylor St, Chicago</p>
+                        <p>Dates Available: 02/12 - 03/01</p>
+                        
+                    </div>
+                    
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                        <img src="https://i.redd.it/new-in-the-loop-broadway-cafe-v0-8ctan1wazd5d1.jpg?width=4032&format=pjpg&auto=webp&s=f4ccfcffc1e507fe386777224d8bd827937343ff">
+                    </div>
+                    
+                    <h2 class ="a">Broadway Cafe</h2>
+                    <div class="info">
+                        <p>Rate: $170</p>
+                        <p>Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 381 Fullerton St, Chicago</p>
+                        <p >Dates Available: 02/15 - 02/21</p>
+                    </div>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                    <img src="https://www.andotherstories.org/wp-content/uploads/2021/07/Madison-Street-Books.jpeg">
+                    </div>
+                    <h2 class ="a">Madison St. Books</h2>
+                    <div class="info">
+                        <p>Rate: $195</p>
+                        <p>Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 561 Westren St, Chicago</p>
+                        <p>Dates Available: 02/13 - 02/19</p>
+    
+                    </div>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="card">
+                    <div class="basic-info">
+                        <img src="https://lushwineandspirits.com/wp-content/uploads/2023/12/Obit_Mr_Beef_23066779939298-1536x864.webp">
+                    </div>
+                    <h2 class ="a">Mr. Beef</h2>
+                    
+                    <div class="info">
+                        <p >Rate: $200</p>
+                        <p >Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 987 Cake St, Chicago</p>
+                        <p>Dates Available: 02/13 - 02/19</p>
+                    </div>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="all-cards" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="logo-and-name">
+            <a href="index.html"><img class="logo2" src="src/logo.png"></a>
+        </div>
+
+        <nav class="footer-links">
+            <a class="footerlink" href="index.html">Home</a>
+            <a class="footerlink" href="hostevent.html">Host a Market</a>
+            <a class="footerlink" href="vendorfacing.html">Sign up to Vend</a>
+            <a class="footerlink" href="attendee.html">Find a Market to Shop</a>
+        </nav>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const cardContainer = document.getElementById("cardContainer");
+
+    // Retrieve all stored venues
+    let venues = JSON.parse(sessionStorage.getItem("venues")) || [];
+
+    // Create a card for each venue
+    venues.forEach(createCard);
+});
+
+function createCard(card) {
+    const cardContainer = document.getElementById("cardContainer");
+
+    // Create the card element
+    const contentDiv = document.createElement("div");
+    contentDiv.classList.add("content");
+
+    const cardDiv = document.createElement("div");
+    cardDiv.classList.add("card");
+
+    // Basic Info Section (Image)
+    const basicInfoDiv = document.createElement("div");
+    basicInfoDiv.classList.add("basic-info");
+    const img = document.createElement("img");
+    img.src = card.imageLink;
+    img.alt = "Venue Image";
+    basicInfoDiv.appendChild(img);
+
+    // Title (Business Name)
+    const title = document.createElement("h2");
+    title.classList.add("a");
+    title.textContent = card.businessName;
+
+    // Information Section
+    const infoDiv = document.createElement("div");
+    infoDiv.classList.add("info");
+
+    infoDiv.innerHTML = `
+        <p><strong>Rate:</strong> ${card.rate}</p>
+        <p><strong>Interests:</strong> ${card.interests}</p>
+        <p><strong>Location:</strong> ${card.location}</p>
+        <p><strong>Dates Available:</strong> ${card.dates}</p>
+    `;
+
+    // Message Button
+    const messageDiv = document.createElement("div");
+    messageDiv.classList.add("message");
+    const messageButton = document.createElement("button");
+    messageButton.textContent = "Message";
+    messageDiv.appendChild(messageButton);
+
+    // Append elements to card
+    cardDiv.appendChild(basicInfoDiv);
+    cardDiv.appendChild(title);
+    cardDiv.appendChild(infoDiv);
+    cardDiv.appendChild(messageDiv);
+
+    // Append card to content container
+    contentDiv.appendChild(cardDiv);
+    cardContainer.appendChild(contentDiv);
+}
+
+    </script>
+
+    <script src="vendor.js"></script> 
+    </body>
+
+
+</html>
