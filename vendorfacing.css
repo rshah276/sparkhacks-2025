@@ -1,39 +1,61 @@
 
-h1 {
-    font-family: 'Playfair Display', serif;
-    color: #FFFBF4;
+.main-link{
+    font-family: 'Playfair Display';
     font-weight: bold;
-    font-size: 20px;
-    text-align: left;
+    color: #FFFBF4;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.main-link:hover {
+    color: #47352D;
+}
+
+.sub-links{
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.logo-and-name{
+    display: flex;
+    align-items: center;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding-left: 10px;
+    padding-right: 20px;
     background-color: #F8937A;
-    /* padding-top: 30px; */
-}
-
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px;
-}
-
-ul li {
-    display: inline;
-}
-
-ul li a {
-    text-decoration: none;
     color: #FFFBF4;
-    font-weight: bold;
 }
+
+.small-links{
+    padding-left: 20px;
+    color: #FFFBF4;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: 'ABeeZee';
+}
+
+.small-links:hover {
+    color: #47352D;
+}
+
+a{
+    text-decoration: none;
+}
+
 
 body{
     background-color: #FFFBF4;
@@ -44,7 +66,6 @@ body{
 
 .container {
     display: flex;
-    height: 100vh; 
     /* justify-content: space-around; */
 }
 
@@ -85,7 +106,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 15px;
+    padding: 50px;
+    padding-top: 15px;
     gap:20px;
 }
 
@@ -95,7 +117,6 @@ body{
     object-fit: cover; 
     border-radius: 5px;
 }
-
 
 .message {
     display: flex;
@@ -112,8 +133,6 @@ body{
     padding-top: 20px;
     margin-right: 800px;
     margin-left: 60px;
-  
-
 }
 
 button {
@@ -133,9 +152,11 @@ button {
 .content {
     padding: 15px;
 }
+
 .checkbox{
     color: #554542; 
 }
+
 .button-container button{
     /* background-color:#bfdbbf; */
     color: #554542; 
@@ -209,4 +230,46 @@ button {
      height: 100%; 
      overflow: auto; 
      background-color: rgba(0,0,0,0.4);
+}
+
+.footer {
+    /* margin-top: 75px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8937a;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-site-name {
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #FFFBF4;
+    margin-top: 0px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerlink {
+    font-size: 18px;
+    color: #FFFBF4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'ABeeZee';
+}
+
+.footerlink:hover {
+    color: #47352D;
+}
+
+.logo2{
+    width: 100px;
+    margin-bottom: 15px;
 }
