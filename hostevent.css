@@ -156,13 +156,13 @@ label.input {
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    color: #FFFBF4;
-    background-color:  #a5c896;
+    color: #554542;
+    background-color:  rgba(0, 151, 19, 0.1);
     min-width: 50px; /* Fixed width for consistent size */
     height: 30px;
     /* padding: 10px 15px; */
     border-radius: 5px;
-    border: 2px solid  #a5c896;
+    /* border: 2px solid  rgba(0, 151, 19, 0.1); */
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 7px;
@@ -188,7 +188,7 @@ input[type="text"] {
 
 .amenity-label:hover {
 
-    background-color: #77ab61;
+    background-color: rgb(162, 209, 142);; /*middle*/
 }
 
 .amenity-checkbox {
@@ -197,9 +197,9 @@ input[type="text"] {
 }
 
 .amenity-checkbox:checked + .amenity-label {
-    background-color: #6b9f54;
-    color: white;
-    border-color: #4CAF50;
+    background-color: #a5c896; /*fully clicked*/
+    color: #554542;
+    border-color: #a5c896;
 }
 
 .custom-amenity {
