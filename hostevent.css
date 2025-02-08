@@ -27,7 +27,7 @@ body{
 }
 
 .titlebox{
-    background-color: #FFFBF4;
+    /* background-color: #FFFBF4; */
     color: #554542;
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@ form {
     gap: 10px;
     /* max-width: 350px; */
     width: 600px;
-    background-color: transparent;
+    background-color: #FFFBF4;
     border-color: #F8937A;
     border-style: solid;
     border-width: 3px;
@@ -177,7 +177,7 @@ label.input {
     align-items: center;
     justify-content: center;
     color: #554542;
-    background-color:  rgba(0, 151, 19, 0.1);;
+    background-color:  rgba(0, 151, 19, 0.1);
     min-width: 50px; /* Fixed width for consistent size */
     height: 30px;
     /* padding: 10px 15px; */
@@ -375,5 +375,21 @@ a{
 .logo2{
     width: 100px;
     margin-bottom: 15px;
+}
+
+.green-grad{
+    max-width: 500px;
+    margin-left: -150px;
+    margin-top: -250px;
+    position:absolute;
+    z-index:-1;
+}
+
+.peach-grad{
+    max-width: 400px;
+    margin-left: 1250px;
+    margin-top: 750px;
+    position:absolute;
+    z-index:-1;
 }
 
