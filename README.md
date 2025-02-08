@@ -1,4 +1,4 @@
-# sparkhacks-2025
+# Popup Connect
 
 ## How To Run
 Use the Live Server Extension in VS code to run our website. Right click on index.html, and select “Open with Live Server”. Then, feel free to explore our Host, Vend, Community, and About pages! In Host, you’ll find a form to add an event. In Vend, you’ll find open markets
