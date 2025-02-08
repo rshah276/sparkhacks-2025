@@ -1,0 +1,200 @@
+
+.heading {
+    font-family: 'Playfair Display', serif;
+    color: #554542;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 100px;
+}
+.content {
+    display: flex;
+    align-items: center;  /* Align the text and image vertically in the center */
+    justify-content: space-between;  /* Space out the text and image */
+}
+.img-text {
+    display: flex;
+    flex-direction: column; /* Stack heading and text vertically */
+    justify-content: flex-start; /* Align items to the top of the container */
+}
+
+body{
+    background-color: #FFFBF4;
+    margin: 0;  
+    font-family: 'ABeeZee';
+    color:#554542;
+}
+
+.line-sparx{
+    max-width: 2000px;
+    max-height: 1500px;
+    margin-left: -250px;
+    margin-top: -650px;
+    position:absolute;
+    z-index:-1;
+}
+.about-text{
+    /* background-color: #FFFBF4; */
+    margin: 0;  
+    font-family: 'ABeeZee';
+    color:#554542;
+    width: 800px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 360px;
+    margin-top: 70px;
+    padding-bottom: 300px;
+    /* width: 800px; */
+
+}
+
+.heading2{
+    font-family: 'Playfair Display', serif;
+    color: #554542;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: left;
+    /* padding-top: 300px; */
+    margin-top: 100px;
+    margin-left: 100px;
+
+}
+.heading2-text{
+     margin: 0;  
+    font-family: 'ABeeZee';
+    color:#554542;
+    width: 700px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 210px;
+    /* margin-top: 50px; */
+    /* width: 800px; */
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+.heading3-text{ 
+    margin: 0;  
+    font-family: 'ABeeZee';
+    color:#554542;
+    width: 700px;
+    font-size: 18px;
+    text-align: left;
+    margin-left: 210px;
+    margin-top: 0px;
+    /* width: 800px; */
+
+}
+
+.content img {
+    width: 250px; /* Set the width */
+    height: 250px; /* Set the height to be the same as the width */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the circle without distortion */
+    margin-right: 150px;
+    margin-top:150px;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    }
+
+
+.main-link{
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    color: #FFFBF4;
+    font-size: 26px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.main-link:hover {
+    color: #47352D;
+}
+
+.sub-links{
+    display:flex;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.logo-and-name{
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: #F8937A;
+    color: #FFFBF4;
+}
+
+.small-links{
+    padding-left: 20px;
+    color: #FFFBF4;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    font-family: 'ABeeZee'
+}
+
+.small-links:hover {
+    color: #47352D;
+}
+
+.footer {
+    margin-top: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8937a;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footer-site-name {
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #FFFBF4;
+    margin-top: 0px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerlink {
+    font-size: 18px;
+    color: #FFFBF4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: 'ABeeZee';
+}
+
+.footerlink:hover {
+    color: #47352D;
+}
+
+.logo2{
+    width: 100px;
+    margin-bottom: 15px;
+}
