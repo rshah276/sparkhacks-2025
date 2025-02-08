@@ -1,15 +1,16 @@
 .titlebox{
-    padding-top: 150px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .sitetitle{
-    
+
     font-family: 'Playfair Display';
     color: #554542;
     font-size: 75px;
-    width: 750px;
+    width: 800px;
     text-align: center;
 
 }
@@ -29,10 +30,13 @@ body{
 
 .mainbutton_design{
     width: 225px;
-    height: 100px;
-    background-color: #f8937a;
+    height: 90px;
+    background-color: transparent;
     border-radius: 15px;
-    border-style: none;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f8937a;
+    color: #554542;
 }
 
 .prompt{
@@ -40,6 +44,7 @@ body{
 }
 
 p{
+    z-index: 1;
     text-align: center;
     font-family: 'ABeeZee';
     color: #47352D;
@@ -60,4 +65,20 @@ a{
     font-family: 'ABeeZee';
     color: #47352D;
     font-size: 25px;
+}
+
+.peach-grad{
+    max-width: 400px;
+    margin-left: 250px;
+    margin-top: 75px;
+    position:absolute;
+    z-index:-1;
+}
+
+.green-grad{
+    max-width: 300px;
+    margin-left: 800px;
+    margin-top: 225px;
+    position:absolute;
+    z-index:-1;
 }
