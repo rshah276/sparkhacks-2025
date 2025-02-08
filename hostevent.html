@@ -23,22 +23,26 @@
 
 <body>
 
-
     <nav class="navbar">
-        <h1>Pop-Up Connect</h1>
-        <ul>
-            <li><a href="hostevent.html">Host</a></li> 
-            <li><a href="vendorfacing.html">Community</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>  
+        <div class="logo-and-name">
+            <a class="main-link" href="index.html"><img class="logo" src="src/logo.png"> </a>
+        </div>
+    
+        <div class="sub-links">
+            <a class="small-links" href="hostevent.html">Host</a>
+            <a class="small-links" href="vendorfacing.html">Vend</a>
+            <a class="small-links" href="attendee.html">Community</a>
+            <a class="small-links" href="about.html">About</a>
+        </div>
     </nav>
-
 
     <div class ="titlebox">
         <h1 class="sitetitle">Host an event</h1>
     </div>
-    
+
+    <img class="peach-grad" src="src/peach_gradient.png">
+    <img class="green-grad" src="src/green_gradient.png">
+
     <div class="form">
     <form>
         <!-- <fieldset> -->
@@ -146,6 +150,18 @@
           </button>
     </div>
 
+    <footer class="footer">
+        <div class="logo-and-name">
+            <a href="index.html"><img class="logo2" src="src/logo.png"></a>
+        </div>
+
+        <nav class="footer-links">
+            <a class="footerlink" href="index.html">Home</a>
+            <a class="footerlink" href="hostevent.html">Host a Market</a>
+            <a class="footerlink" href="vendorfacing.html">Sign up to Vend</a>
+            <a class="footerlink" href="attendee.html">Find a Market to Shop</a>
+        </nav>
+    </footer>
 
     <script>
         document.querySelector(".postbutton button").addEventListener("click", function(event) {

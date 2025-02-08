@@ -14,13 +14,16 @@
 
 <body>
     <nav class="navbar">
-        <h1>Pop-Up Connect</h1>
-        <ul>
-            <li><a href="hostevent.html">Host</a></li> 
-            <li><a href="vendorfacing.html">Community</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>  
+        <div class="logo-and-name">
+            <a class="main-link" href="index.html"><img class="logo" src="src/logo.png"> </a>
+        </div>
+    
+        <div class="sub-links">
+            <a class="small-links" href="hostevent.html">Host</a>
+            <a class="small-links" href="vendorfacing.html">Vend</a>
+            <a class="small-links" href="attendee.html">Community</a>
+            <a class="small-links" href="about.html">About</a>
+        </div>
     </nav>
 
     <div class="button-container">
@@ -56,8 +59,6 @@
     <!-- START OF CARD STUFF -->
 
     <div class="container">
-
-
         <div class = "all-cards">
 
             <div class="content">
@@ -243,11 +244,21 @@
                 <div class="all-cards" id="cardContainer">
                 </div>
             </div>
-
         </div>
     </div>
 
+    <footer class="footer">
+        <div class="logo-and-name">
+            <a href="index.html"><img class="logo2" src="src/logo.png"></a>
+        </div>
 
+        <nav class="footer-links">
+            <a class="footerlink" href="index.html">Home</a>
+            <a class="footerlink" href="hostevent.html">Host a Market</a>
+            <a class="footerlink" href="vendorfacing.html">Sign up to Vend</a>
+            <a class="footerlink" href="attendee.html">Find a Market to Shop</a>
+        </nav>
+    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -314,15 +325,8 @@ function createCard(card) {
 
     </script>
 
-
-     
-    
-
     <script src="vendor.js"></script> 
     </body>
-
-
-                
 
 
 </html>
