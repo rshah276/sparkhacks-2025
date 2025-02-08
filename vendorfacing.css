@@ -131,8 +131,8 @@ body{
     justify-content: space-around; /* Distributes buttons evenly */
     border-radius: 5px;
     padding-top: 20px;
-    margin-right: 800px;
-    margin-left: 60px;
+    margin-right: 700px;
+    margin-left: 50px;
 }
 
 button {

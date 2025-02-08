@@ -82,7 +82,7 @@ form {
     gap: 10px;
     /* max-width: 350px; */
     width: 600px;
-    background-color: transparent;
+    background-color: #FFFBF4;
     border-color: #F8937A;
     border-style: solid;
     border-width: 3px;
@@ -358,17 +358,17 @@ a{
 }
 
 .green-grad{
-    max-width: 400px;
-    margin-left: 150px;
-    margin-top: 150px;
+    max-width: 500px;
+    margin-left: -150px;
+    margin-top: -250px;
     position:absolute;
     z-index:-1;
 }
 
 .peach-grad{
-    max-width: 300px;
-    margin-left: 950px;
-    margin-top: 450px;
+    max-width: 400px;
+    margin-left: 1250px;
+    margin-top: 750px;
     position:absolute;
     z-index:-1;
 }
