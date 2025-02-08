@@ -1,6 +1,7 @@
-h1 {
+
+	h1 {
     font-family: 'Playfair Display', serif;
-    color: #554542;
+    color: #FFFBF4;
     font-weight: bold;
     font-size: 20px;
     text-align: left;
@@ -28,7 +29,8 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #554542;
+    /* color: #554542; */
+    color: #FFFBF4;
     font-weight: bold;
 }
 
@@ -40,6 +42,9 @@ body{
 .container {
     display: flex;
     height: 100vh; 
+}
+.a{
+    color: #554542;
 }
 
 .sidebar {
@@ -67,6 +72,12 @@ body{
 
 .sidebar ul li input {
     margin-right: 10px; 
+}
+.sidebar h1{
+    font-family: 'Playfair Display', serif;
+    color: #554542;
+    font-weight: medium;
+    font-size: 20px;
 }
 
 .card {
@@ -101,4 +112,7 @@ button {
 
 .content {
     padding: 20px;
+}
+.checkbox{
+    color: #554542; 
 }
