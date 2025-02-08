@@ -17,7 +17,7 @@
 
 body{
     background-color: #FFFBF4;
-    color: #554542;
+    margin: 0;
 }
 
 .mainpage_buttons{
@@ -25,18 +25,17 @@ body{
     justify-content: space-between;
     padding-left: 475px;
     padding-right: 475px;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
 }
 
 .mainbutton_design{
-    width: 225px;
-    height: 90px;
+    width: 215px;
+    height: 80px;
     background-color: transparent;
     border-radius: 15px;
     border-style: solid;
     border-width: 3px;
     border-color: #f8937a;
-    color: #554542;
 }
 
 .prompt{
@@ -47,6 +46,9 @@ p{
     z-index: 1;
     text-align: center;
     font-family: 'ABeeZee';
+}
+
+.prompt{
     color: #47352D;
 }
 
@@ -58,6 +60,7 @@ p{
 .website-description{
     width: 800px;
     font-size: 17px;
+    color: #47352D;
 }
 
 a{
@@ -79,6 +82,27 @@ a{
     max-width: 300px;
     margin-left: 800px;
     margin-top: 225px;
-    position:absolute;
+    position: absolute;
     z-index:-1;
+}
+
+.footer-site-name{
+    font-size: 28px;
+    font-family: "Playfair Display";
+    font-weight: bold;
+    color: #FFFBF4;
+    padding-right: 500px;
+}
+
+.footerlink{
+    font-size: 18px;
+    padding-top: 22px;
+    color: #FFFBF4;
+}
+
+.footer{
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #f8937a;
 }
