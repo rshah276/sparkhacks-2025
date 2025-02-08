@@ -4,6 +4,7 @@
 <head>
     <title>Popup Connect</title>
     <link rel="stylesheet" href="vendorfacing.css">
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,31 +24,36 @@
     </nav>
 
     <div class="button-container">
-        <div class="type-dropdown">
-            <button onclick="myFunction()" class="dropbtn">Venue Type</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+
+        <div class="dropdown">
+            <button onclick="myFunction1()" class="dropbtn">Venue Type</button>
+            <div id="myDropdown1" class="dropdown-content">
+                <button class="filter-button">Cafe</button>
+                <button class="filter-button">Bookstore</button>
+                <button class="filter-button">Flower Shop</button>
             </div>
-          </div>
-        <button class="filter-button">Price</button>
-        <button class="filter-button">Dates</button>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction2()" class="dropbtn">Price</button>
+            <div id="myDropdown2" class="dropdown-content">
+                <button class="filter-button">$10-$20</button>
+                <button class="filter-button">$20-$50</button>
+                <button class="filter-button">$50+</button>
+              </div>
+        </div>
+        <div class="dropdown"> 
+            <button onclick="myFunction3()" class="dropbtn">Dates</button>
+            <div id="myDropdown3" class="dropdown-content">
+                <button class="filter-button">Now-3 Weeks</button>
+                <button class="filter-button">3 - 6 Weeks</button>
+                <button class="filter-button">6 Weeks+</button>
+              </div>
+        </div>
+
     </div>
 
     <div class="container">
-        <!-- <div class="sidebar">
-            <h1>Filter By:</h1>
-            <ul>
-                <div class="list">
-                    <li class="a"><input type="checkbox" id="item1"><label for="item1"> Cafe </label></li>
-                    <li class="a"><input type="checkbox" id="item2"><label for="item2"> Bookstore </label></li>
-                    <li  class="a"><input type="checkbox" id="item3"><label for="item3"> Restaurant </label></li>
-                    <li  class="a"><input type="checkbox" id="item4"><label for="item4"> Salon </label></li>
-                    <li  class="a"><input type="checkbox" id="item5"><label for="item5"> Boutique </label></li>
-                </div>
-            </ul>
-        </div> -->
+
 
         <div class = "all-cards">
 
@@ -60,9 +66,14 @@
                     <div class="info">
                         <p >Rate: $150</p>
                         <p>Interest Books, Literature, Art</p>
+                        <p>Location: 900 W Buren St, Chicago</p>
                         <p>Dates Available: 03/01 - 03/17</p>
+                        
                     </div>
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
+                    
                 </div>
             </div>
 
@@ -76,10 +87,14 @@
                     <div class="info">
                         <p >Rate: $170</p>
                         <p >Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 124 S Taylor St, Chicago</p>
                         <p >Dates Available: 02/15 - 02/21</p>
+                        
                     </div>
                     
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
 
@@ -93,10 +108,13 @@
                     <div class="info">
                         <p>Rate: $190</p>
                         <p>Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 900 W Rasleen, Chicago</p>
                         <p >Dates Available: 02/13 - 02/19</p>
                     </div>
                 
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
 
@@ -111,10 +129,14 @@
                     <div class="info">
                         <p >Rate: $200</p>
                         <p >Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 915 S Eman, Chicago</p>
                         <p >Dates Available: 02/13 - 02/19</p>
+                        
                     </div>
                     
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
 
@@ -130,10 +152,14 @@
                     <div class="info">
                         <p >Rate: $147</p>
                         <p >Interest: Books, Jewelry, Arts </p>
+                        <p>Location: 121 Taylor St, Chicago</p>
                         <p>Dates Available: 02/12 - 03/01</p>
+                        
                     </div>
                     
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
     
@@ -147,9 +173,12 @@
                     <div class="info">
                         <p>Rate: $170</p>
                         <p>Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 381 Fullerton St, Chicago</p>
                         <p >Dates Available: 02/15 - 02/21</p>
                     </div>
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
 
@@ -163,9 +192,13 @@
                     <div class="info">
                         <p>Rate: $195</p>
                         <p>Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 561 Westren St, Chicago</p>
                         <p>Dates Available: 02/13 - 02/19</p>
+    
                     </div>
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
 
@@ -179,13 +212,22 @@
                     <div class="info">
                         <p >Rate: $200</p>
                         <p >Interests: Crochet, Bakery, Books</p>
+                        <p>Location: 987 Cake St, Chicago</p>
                         <p>Dates Available: 02/13 - 02/19</p>
                     </div>
-                    <button>Message</button>
+                    <div class="message">
+                        <button>Message</button>
+                    </div>
                 </div>
             </div>
 
         </div>
+    </div>
+
+    
+
+    <script src="vendor.js"></script> 
+    </body>
 
 
                 
