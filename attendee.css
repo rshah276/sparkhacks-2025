@@ -14,6 +14,7 @@ body{
   height: 20px;
   margin: 30px;
   margin-left: 55px;
+  font-size: 15px;
 }
 
 #searchbar:focus {
@@ -30,38 +31,11 @@ h1 {
   text-align: left;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #F8937A;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 15px;
-}
-
-ul li {
-  display: inline;
-}
-
-ul li a {
-  text-decoration: none;
-  color: #554542;
-  font-weight: bold;
-}
-
 body{
   background-color: #FFFBF4;
   margin: 0; 
  
 }
-
 
 .button-container {
   display: flex;  
@@ -82,6 +56,7 @@ button {
   color: #554542;
   background: rgba(0, 151, 19, 0.1);
   /* background-color: transparent; */
+  font-size: 15px;
 }
 
 button:hover{
@@ -164,4 +139,104 @@ button:hover{
 p{
   font-size: 15px;
   font-family: 'ABeeZee';
+}
+
+a{
+  text-decoration: none;
+}
+
+.footer {
+  margin-top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f8937a;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.footer-site-name {
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  color: #FFFBF4;
+  margin-top: 0px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerlink {
+  font-size: 18px;
+  color: #FFFBF4;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: 'ABeeZee';
+}
+
+.footerlink:hover {
+  color: #47352D;
+}
+
+.logo2{
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.main-link{
+  font-family: 'Playfair Display';
+  font-weight: bold;
+  color: #FFFBF4;
+  font-size: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+.main-link:hover {
+  color: #47352D;
+}
+
+.sub-links{
+  display:flex;
+  align-items: center;
+}
+
+.logo{
+  width: 60px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.logo-and-name{
+  display: flex;
+  align-items: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #F8937A;
+  color: #FFFBF4;
+}
+
+.small-links{
+  padding-left: 20px;
+  color: #FFFBF4;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  font-family: 'ABeeZee';
+}
+
+.small-links:hover {
+  color: #47352D;
 }
