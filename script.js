@@ -7,6 +7,7 @@ function hoverOn() {
 
 function hoverOff() {
     $(this).css("background-color", "#FFFBF4"); 
+    $(this).css("color", "#f8937a"); 
 }
 
 btn.on("mouseenter", hoverOn);
