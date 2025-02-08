@@ -128,11 +128,12 @@ body{
 
 .button-container {
     display: flex;  
-    justify-content: space-around; 
-    border-radius: 5px;
-    padding-top: 20px;
-    margin-right: 700px;
-    margin-left: 50px;
+  justify-content: start; 
+  border-radius: 5px;
+  padding-top: 20px;
+  gap: 60px;
+  /* margin-right: 700px; */
+  margin-left: 65px;
 }
 
 button {
@@ -160,7 +161,6 @@ button {
 .button-container button{
     color: #554542; 
     font-family: 'ABeeZee';
-    gap: 60px; 
 }
 
 .dropbtn{
@@ -168,10 +168,9 @@ button {
     font-size: 15px;
     height: 30px;
     font-family: 'ABeeZee';
-    background-color: transparent;
-    border-color: #a5c896;
-    border-style: solid;
+    background-color: rgba(0, 151, 19, 0.1);
     border-width: 2px;
+    border-radius: 50px;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -180,8 +179,14 @@ button {
   
   
   .dropdown {
-    position: relative;
-    display: inline-block;
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: flex-start; */
+   
+    
+    /* margin-inline: 20px; */
+    
+    
   }
   
   
