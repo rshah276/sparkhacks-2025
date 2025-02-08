@@ -122,6 +122,7 @@
     </form>
     </div>
 
+
     <div class="postbutton">
         <button>
             <span>Post</span>
@@ -140,6 +141,30 @@
             </svg>
           </button>
     </div>
+
+    <script>
+        document.getElementById("venueform").addEventListener("post", function(event){
+            
+            const businessName = document.getElementById("businessName").value;
+            const venueType = document.getElementById("venueType").value;
+            const location = document.getElementById("location").value;
+            const tables = document.getElementById("tables").value;
+            const imageLink = document.getElementById("imageLink").value;
+
+           
+            const venueData = {
+                businessName,
+                venueType,
+                location,
+                tables,
+                imageLink
+            };
+
+            localStorage.setItem("venueData", JSON.stringify(venueData));
+            window.location.href = "display.html";
+
+        });
+    </script>
 
 
 </body>
