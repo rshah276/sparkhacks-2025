@@ -146,50 +146,6 @@
           </button>
     </div>
 
-    <!-- <script>
-        document.querySelector(".postbutton button").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevent form submission
-    
-            // Get values from form
-            const businessName = document.querySelector("[placeholder='Business Name']").value;
-            const rate = document.querySelector("[placeholder='Rate']").value;
-            const interests = document.querySelector("[placeholder='Intrests']").value;
-            const location = document.querySelector("[placeholder='Location']").value;
-            const dates = document.querySelector("[placeholder='Date of Event']").value;
-            const imageLink = document.querySelector("[placeholder='Image Link']").value;
-    
-            if (!businessName || !rate || !interests || !location || !dates || !imageLink) {
-                alert("Please fill out all fields before posting.");
-                return;
-            }
-    
-            // Create text file content
-            const fileContent = `Business Name: ${businessName}
-    Rate: ${rate}
-    Interests: ${interests}
-    Location: ${location}
-    Dates Available: ${dates}
-    Image Link: ${imageLink}`;
-    
-            // Create a Blob (Binary Large Object)
-            const blob = new Blob([fileContent], { type: "text/plain" });
-    
-            // Create a download link
-            const link = document.createElement("a");
-            link.href = URL.createObjectURL(blob);
-            link.download = "venue_submission.txt";
-    
-            // Auto-click the link to start download
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-    
-            // Redirect to `vendorfacing.html` after download
-            setTimeout(() => {
-                window.location.href = "vendorfacing.html";
-            }, 500);
-        });
-    </script> -->
 
     <script>
         document.querySelector(".postbutton button").addEventListener("click", function(event) {

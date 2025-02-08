@@ -241,7 +241,6 @@
 
             <div class="container">
                 <div class="all-cards" id="cardContainer">
-                    <!-- New venue cards will be added here -->
                 </div>
             </div>
 
@@ -254,7 +253,6 @@
         document.addEventListener("DOMContentLoaded", function () {
     const cardContainer = document.getElementById("cardContainer");
 
-    // localStorage.removeItem("venues");
     // Retrieve all stored venues
     let venues = JSON.parse(sessionStorage.getItem("venues")) || [];
 
