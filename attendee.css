@@ -19,6 +19,7 @@ body{
     outline: none;
 }
 
+
 h1 {
     font-family: 'Playfair Display', serif;
     color: #554542;
@@ -77,6 +78,12 @@ button {
     border: solid #a5c896;
     font-family: 'ABeeZee';
     color: #554542;
+    background: rgba(0, 151, 19, 0.1);
+    /* background-color: transparent; */
+}
+
+button:hover{
+    background-color: #a5c896;
 }
 
 /* From Uiverse.io by joe-watson-sbf */ 
@@ -87,6 +94,7 @@ button {
     gap: 20px;
     /* padding-right: 100px; */
     justify-content: space-around;
+    z-index: 1;
 }
 .flip-card {
     background-color: transparent;
@@ -131,15 +139,13 @@ button {
   }
   
   .flip-card-front {
-    /* background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%,
-       rgb(255, 211, 195) 40%, rgba(255, 127, 80, 0.603) 48%); */
+    background: #FFFBF4;
     color: #554542;
     /* color: #554542; */
   }
   
   .flip-card-back {
-    /* background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%,
-       bisque 40%, rgb(255, 185, 160) 78%); */
+    background: #FFFBF4;
     color: #554542;
     text-wrap: pretty;
     /* color: coral; */
