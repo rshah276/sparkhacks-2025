@@ -23,15 +23,15 @@
   
     
     <div class="button-container">
-        <button>Food</button>
-        <button>Jewelry</button>
-        <button>Art</button>
-        <button>Fashion</button>
+        <button data-filter="food">Food</button>
+        <button data-filter="jewelry">Jewelry</button>
+        <button data-filter="art">Art</button>
+        <button data-filter="fashion">Fashion</button>
     </div>
 
     <div class="card-container">
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="food">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id= "photo" src="https://www.marmaladegrove.com/cdn/shop/files/MarmaladeGrove_PartyOfSix_8f8ff5fa-b3b4-449e-9fc8-9757984ce135_2000x2000.jpg?v=1700012860" alt="Exotic jams">  
@@ -45,7 +45,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="jewelry">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://m.media-amazon.com/images/I/51YKImm-CGL._AC_UY300_.jpg" alt="earrings">
@@ -59,7 +59,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="food">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://image.made-in-china.com/202f0j00NtfkgczhaVol/Ball-Shaped-Hard-Candy-Watermelon-Hard-Candy-for-EU-Maket.webp" alt="candy">
@@ -73,7 +73,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="art">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://static.wixstatic.com/media/bbd6f8_0b90d31bcabe4d84b826e973af19061e~mv2.png/v1/fill/w_980,h_621,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/bbd6f8_0b90d31bcabe4d84b826e973af19061e~mv2.png" alt="candy">
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="fashion">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://images.squarespace-cdn.com/content/v1/622ffababc627a0bc779867b/1650911977998-US2XMOFB3TIO7A5J1PJD/edith%2B6.jpg?format=1000w" alt="crochet">
@@ -102,7 +102,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="food">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://thevoicemagazine.org/wp-content/uploads/2021/10/thevoicemagazine_eat-honey.jpg" alt="honey">
@@ -116,7 +116,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="art">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkVQHQT01tU2Ew1FA3Gc7V0sP3YTAFMdd4GA&s" alt="ootmel">
@@ -131,7 +131,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="fashion">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://i.etsystatic.com/5538429/r/il/69ee97/3625086822/il_1588xN.3625086822_ipun.jpg" alt="purse">
@@ -145,7 +145,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="fashion">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://i.etsystatic.com/13651661/r/il/cf351e/3247915488/il_570xN.3247915488_ea8c.jpg" alt="hair clip">
@@ -159,7 +159,7 @@
             </div>
         </div>
 
-        <div class="flip-card">
+        <div class="flip-card" data-category="art">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
                     <img id="photo" src="https://shuffledink.com/wp-content/uploads/2022/11/DegenPCD.jpg" alt="hair clip">
@@ -178,6 +178,30 @@
 
 
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".button-container button");
+            const cards = document.querySelectorAll(".flip-card");
+
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const filter = this.getAttribute("data-filter");
+
+                    cards.forEach(card => {
+                        const category = card.getAttribute("data-category");
+
+                        if (filter === "all" || category === filter) {
+                            card.style.display = "flex";  // Show matching cards
+                        } else {
+                            card.style.display = "none"; // Hide non-matching cards
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
     
 </body>
 </html>
