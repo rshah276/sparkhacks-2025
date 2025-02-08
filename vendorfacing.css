@@ -5,12 +5,7 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.a{
-    text-decoration: none;
-    font-family: 'ABeeZee';
-    color: #47352D;
-    font-size: 25px;
-}
+
 
 
 
@@ -27,18 +22,6 @@ button {
     color: white;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #b3d8b3;
-    padding: 20px;
-    position: relative;
-    z-index: 1; 
-}
-.container {
-    display: flex;
-    justify-content: space-between;
 }
 
 h1 {
@@ -79,4 +62,42 @@ body{
     background-color: #FFFBF4;
     margin: 0; 
    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    
+}
+
+.sidebar {
+    width: 15%; 
+    background-color: #b3d8b3;
+    padding: 20px;
+    position: relative;
+}
+
+.sidebar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+.list{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar ul li {
+    display: block; 
+    margin-bottom: 10px; 
+}
+
+.sidebar ul li input {
+    margin-right: 10px; 
+}
+
+
+.content {
+   
+    padding: 20px;
 }
