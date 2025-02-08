@@ -11,7 +11,7 @@ Our code uses HTML to manage the way a user navigates through our page. We use C
 ## Inspiration
 Jane is a local independent artist that sells her prints, merch, and other creations. She has a problem -- she wants to expand her customer base, but she has no physical studio space to hold sales. She only posts through social media, but as a small business with no foot traffic coming to see what she sells, she has difficulty growing her platform. Jane relies on local venues, like cafes and bookstores, holding artist vending opportunities, but can really only discover them through social media and word of mouth. 
 
-Gathers Coffee, on the other hand, is a local coffee shop that wants to build a sense of community in their space, and is looking to host events that will bring traffic, help people interact with the community, all while being non-disruptive to their day to day functions.
+GroundUp Coffee, on the other hand, is a local coffee shop that wants to build a sense of community in their space, and is looking to host events that will bring traffic, help people interact with the community, all while being non-disruptive to their day to day functions.
 
 Enter Popup Connect: an all in one web application serving the business needs of sellers like Jane and businesses like Gathers, but also alerting community members to these events, increasing foot traffic.
 
