@@ -36,14 +36,12 @@
         </div>
     </nav>
 
-    <img class="peach-grad" src="src/peach_gradient.png">
-    <img class="green-grad" src="src/green_gradient.png">
-
     <div class ="titlebox">
         <h1 class="sitetitle">Host an event</h1>
     </div>
 
-    
+    <img class="peach-grad" src="src/peach_gradient.png">
+    <img class="green-grad" src="src/green_gradient.png">
 
     <div class="form">
     <form>
@@ -63,11 +61,9 @@
                 <select id="venue" name="venue" required>
                     <option value="" disabled selected hidden>Type of venue</option>
                     <option value="cafe">Cafe</option>
-                    <option value="studio space">Studio Space</option>
-                    <option value="gallery">Gallery</option>
-                    <option value="boutique/shop">Boutique/Shop</option>
+                    <option value="boutique">Boutique</option>
+                    <option value="boutique">Shop</option>
                     <option value="bookstore">Bookstore</option>
-                    <option value="community center">Community Center</option>
                 </select>
             </label>
 
@@ -81,11 +77,11 @@
             </label> 
 
             <label>
-                <input required="" placeholder="Number of Tables Available" type="text" class="input">
+                <input required="" placeholder="Number of Tables" type="text" class="input">
             </label> 
 
             <label>
-                <input required="" placeholder="Rate Per Hour" type="text" class="input">
+                <input required="" placeholder="Hourly Rate" type="text" class="input">
             </label> 
 
             <label>
@@ -119,9 +115,13 @@
                    
                 </div>
             </div>
+
+
             <label>
-                <input required="" placeholder="Link to Image of Venue" type="text" class="input">
+                <input required="" placeholder="Shop Image Link" type="text" class="input">
             </label> 
+
+        
 
         <!-- </fieldset> -->
 
@@ -167,11 +167,11 @@
 
     // Get values from form
     const businessName = document.querySelector("[placeholder='Business Name']").value;
-    const rate = document.querySelector("[placeholder='Rate']").value;
-    const interests = document.querySelector("[placeholder='Intrests']").value;
+    const rate = document.querySelector("[placeholder='Hourly Rate']").value;
+    const interests = document.querySelector("[placeholder='Vendor Categories']").value;
     const location = document.querySelector("[placeholder='Location']").value;
     const dates = document.querySelector("[placeholder='Date of Event']").value;
-    const imageLink = document.querySelector("[placeholder='Image Link']").value;
+    const imageLink = document.querySelector("[placeholder='Shop Image Link']").value;
 
     if (!businessName || !rate || !interests || !location || !dates || !imageLink) {
         alert("Please fill out all fields before posting.");
@@ -195,7 +195,5 @@
 
 
 </body>
-
-
 
 </html>
