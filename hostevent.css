@@ -44,12 +44,41 @@ label {
     margin-bottom: 10px;
 }
 
-select {
+/* select {
     display: block;
     margin-bottom: 10px;
     border:none;
     border-radius: 5px;
     background-color: #ffffffff;
+} */
+
+/* Style select field */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    color: #888; /* Set text color to match input placeholder */
+}
+
+/* Style the first option to look like a placeholder */
+select option[value=""] {
+    color: #aaa; /* Match the input placeholder color */
+}
+
+/* Ensure color changes when selecting another option */
+select:focus {
+    border-color: #4CAF50;
+    outline: none;
+    color: #888; /* Ensure selected text appears black */
+}
+
+/* Change the dropdown text color when selecting an option */
+select option {
+    color: #888; /* Ensures normal options appear black */
 }
 
 fieldset {
@@ -59,14 +88,30 @@ fieldset {
 }
 
 
-form {
+/* form { */
     /* background-color:	#f0eeee; */
-    background-color:  #a5c896;
+    /* background-color:  #a5c896;
     width: 600px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
-}
+    border-radius: 8px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) */
+/* } */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* max-width: 350px; */
+    width: 600px;
+    background-color: transparent;
+    border-color: #F8937A;
+    border-style: solid;
+    border-width: 3px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    
+  }
 
 .form {
     display: flex;
@@ -77,15 +122,32 @@ form {
 
 }
 
-/* amenities */
-/* .container {
-    max-width: 500px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #F8937A;
+    border-radius: 5px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'ABeeZee';
+}
+
+select:focus {
+    border-color: #ccc;
+    outline: none;
+    font-family: 'ABeeZee';
+}
+
+label.input {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+    background: transparent;
+    font-family: 'ABeeZee';
+}
+
 
 .container {
     /* display: flex;
@@ -107,17 +169,20 @@ form {
     max-width: 850px; /* Adjust width as needed */
 }
 
+
 .amenity-label {
+    font-family: 'ABeeZee';
     display: inline-flex;
     /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    background-color: #f0f0f0;
+    color: #FFFBF4;
+    background-color:  #a5c896;
     min-width: 50px; /* Fixed width for consistent size */
     height: 30px;
     /* padding: 10px 15px; */
     border-radius: 5px;
-    border: 2px solid #ccc;
+    border: 2px solid  #a5c896;
     cursor: pointer;
     transition: all 0.3s ease;
     padding: 7px;
@@ -125,11 +190,14 @@ form {
 }
 
 input[type="text"] {
-    padding: 8px;
+    background: transparent;
+    font-family: 'ABeeZee';
+    padding: 10px;
     width: calc(100% - 20px);
-    border: 2px solid #ccc;
+    border: 2px solid #F8937A;
     border-radius: 5px;
 }
+
 
 .amenity-item {
     display: flex;
@@ -140,7 +208,7 @@ input[type="text"] {
 
 .amenity-label:hover {
 
-    background-color: #ddd;
+    background-color: #77ab61;
 }
 
 .amenity-checkbox {
@@ -149,7 +217,7 @@ input[type="text"] {
 }
 
 .amenity-checkbox:checked + .amenity-label {
-    background-color: #4CAF50;
+    background-color: #6b9f54;
     color: white;
     border-color: #4CAF50;
 }
@@ -166,15 +234,22 @@ button {
     transition: all 0.2s;
     padding: 10px 20px;
     border-radius: 100px;
-    background:  #f8937a;
-    border: 1px solid transparent;
+
+    border-style: solid;
+    border-width: 3px;
+    border-color: #f8937a;
+    background-color: transparent;
+    /* background:  #f8937a; */
+    /* border: 1px solid transparent; */
     display: flex;
     align-items: center;
     font-size: 15px;
+    font-family: 'ABeeZee';
 }
 
 button:hover {
-    background:  rgb(215, 127, 105);
+    background: #f8937a;
+    color:  #FFFBF4;
 }
 
 button > svg {
@@ -184,7 +259,9 @@ button > svg {
 }
 
 button:hover svg {
-    transform: translateX(5px);
+    transform: translateX(5px); 
+    fill:  #FFFBF4;
+    /* stroke:  #FFFBF4; */
 }
 
 button:active {
