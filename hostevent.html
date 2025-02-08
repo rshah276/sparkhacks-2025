@@ -209,13 +209,13 @@
     }
 
     // Retrieve existing venues from localStorage or create an empty array
-    let venues = JSON.parse(localStorage.getItem("venues")) || [];
+    let venues = JSON.parse(sessionStorage.getItem("venues")) || [];
 
     // Add new venue to the array
     venues.push({ businessName, rate, interests, location, dates, imageLink });
 
     // Store updated array back in localStorage
-    localStorage.setItem("venues", JSON.stringify(venues));
+    sessionStorage.setItem("venues", JSON.stringify(venues));
 
     // Redirect to `vendorfacing.html`
     window.location.href = "vendorfacing.html";
