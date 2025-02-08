@@ -80,9 +80,9 @@ a{
 }
 
 .peach-grad{
-    max-width: 400px;
+    max-width: 320px;
     margin-left: 250px;
-    margin-top: 75px;
+    /* margin-top: px; */
     position:absolute;
     z-index:-1;
 }
@@ -90,7 +90,7 @@ a{
 .green-grad{
     max-width: 300px;
     margin-left: 800px;
-    margin-top: 225px;
+    margin-top: 150px;
     position: absolute;
     z-index:-1;
 }
