@@ -72,14 +72,14 @@
                     </div>
                     <div class="message">
                         <button onClick="openForm()">Message</button>
-                        <div id="myForm" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.4);">
-                            <div style = "background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 50%;">
+                        <div id="myForm">
+                            <div style = "background-color: #fefefe; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 50%; border-radius: 20px; border-color:#F8937A ;">
                               <form>
-                                <!-- Form elements go here -->
+                               
                                 <label for="name">Name:</label><br>
                                 <input type="text" id = "name" name="name" style="width:200px"><br><br>
                                 <label for="message">Email:</label><br>
-                                <!-- <input type="message" id = "message" name="message" style="width:550px;height:200px"><br><br> -->
+                               
 
                                 <textarea id="message" name="message" style="width: 100%; height: 100px; resize: vertical;"></textarea><br><br>
                                 <button type="submit">Submit</button>
