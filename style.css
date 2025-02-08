@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-around;
     z-index: 1;
+    margin-bottom: -25px;
 }
 
 .sitetitle{
@@ -94,14 +95,14 @@ a{
     z-index:-1;
 }
 
-
 .main-link{
     font-family: 'Playfair Display';
     font-weight: bold;
     color: #FFFBF4;
     font-size: 26px;
-    margin-top: 10px;
-    margin-bottom: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
     transition: color 0.3s ease;
 }
 
@@ -111,6 +112,17 @@ a{
 
 .sub-links{
     display:flex;
+    align-items: center;
+}
+
+.logo{
+    width: 60px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.logo-and-name{
+    display: flex;
     align-items: center;
 }
 
@@ -152,7 +164,6 @@ a{
     font-weight: bold;
     color: #FFFBF4;
     margin-top: 0px;
-   
 }
 
 .footer-links {
@@ -173,3 +184,7 @@ a{
     color: #47352D;
 }
 
+.logo2{
+    width: 100px;
+    margin-bottom: 15px;
+}
