@@ -1,37 +1,28 @@
 # sparkhacks-2025
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#how to run">How To Run</a>
-    </li>
-    <li><a href="#contributors">Contributors</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+## Inspiration
+Jane is a local independent artist that sells her prints, merch, and other creations. She has a problem -- she wants to expand her customer base, but she has no physical studio space to hold sales. She only posts through social media, but as a small business with no foot traffic coming to see what she sells, she has difficulty growing her platform. Jane relies on local venues, like cafes and bookstores, holding artist vending opportunities, but can really only discover them through social media and word of mouth. 
 
-## About The Project
+Gathers Coffee, on the other hand, is a local coffee shop that wants to build a sense of community in their space, and is looking to host events that will bring traffic, help people interact with the community, all while being non-disruptive to their day to day functions.
+
+Enter Popup Connect: an all in one web application serving the business needs of sellers like Jane and businesses like Gathers, but also alerting community members to these events, increasing foot traffic.
 
 
-### Built With
-* [![HTML][HTML5]][HTML-url]
-* [![JavaScript][JavaScript]][JavaScript-url]
-* [![CSS][CSS3]][CSS-url]
+## Contributors
+ Rajvi Shah, Eman Arsham, Rasleen Dhaliwal, Kristine Ma, Kyla Gonzalez
 
-[HTML5]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
-[HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
 
-[JavaScript]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
-[JavaScript-url]: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+## Overview
 
-[CSS3]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
-[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+### How We Built It
+We built this platform with HTML, CSS, and JavaScript. We started by brainstorming ideas and looking at existing solutions to our problem, building a Figma design, and then busting out some code. Each of us was mainly responsible for a different part of the overall website, but it's fair to say teamwork really made the dream work!
+
+Our code uses HTML to manage the way a user navigates through our page. We use CSS to provide consistent styling and dynamic transformations throughout the application. JavaScript event handlers are used to implement important functionalities such as searching, creating, and displaying possible features.
+
+## How To Run
+Use the Live Server Extension in VS code to run our website. Right click on index.html, and select “Open with Live Server”. Then, feel free to explore our Host, Vend, Community, and About pages! In Host, you’ll find a form to add an event. In Vend, you’ll find open markets
+
+
+
+
 
