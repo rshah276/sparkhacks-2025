@@ -101,7 +101,7 @@ button:hover{
 .flip-card {
     background-color: transparent;
     width: 250px;
-    height: 254px;
+    height: 270px;
     perspective: 1000px;
     font-family: sans-serif;
   }
@@ -159,4 +159,9 @@ button:hover{
     height: 100%; 
     object-fit: cover; 
     border-radius: 1rem;
+  }
+
+  p{
+    font-size: 15px;
+    font-family: 'ABeeZee';
   }

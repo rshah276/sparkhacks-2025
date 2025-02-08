@@ -41,6 +41,7 @@
                     <p><b>Pop Up Location: </b>1010 N Timely St</p>
                     <p><b>Date: </b>Feb 12</p>
                     <p><b>Time: </b>9am-2pm</p>
+                    <p>Rajvi's makes organic and homemade jam straight from her farm in California.</p>
                 </div>
             </div>
         </div>
@@ -55,6 +56,7 @@
                     <p><b>Pop Up Location: </b>2058 S Flower Ave</p>
                     <p><b>Date: </b>Mar 01</p>
                     <p><b>Time: </b>12pm-4pm</p>
+                    <p>Aesthic handmade earrings inspired by the beauty of nature.</p>
                 </div>
             </div>
         </div>
@@ -69,6 +71,7 @@
                     <p><b>Pop Up Location: </b>1872 W Eren Ave</p>
                     <p><b>Date: </b>Mar 07</p>
                     <p><b>Time: </b>12pm-4pm</p>
+                    <p>Handpulled hard candy. Experiencing beauty and taste with every bite.</p>
                 </div>
             </div>
         </div>
@@ -98,6 +101,7 @@
                     <p><b>Pop Up Location: </b>8888 N Golden St</p>
                     <p><b>Date: </b>Jun 28</p>
                     <p><b>Time: </b>12pm-5pm</p>
+                    <p>Hand crochet pieces. Wearable art.</p>
                 </div>
             </div>
         </div>
@@ -112,6 +116,7 @@
                     <p><b>Pop Up Location: </b>1155 S Bizz Ave</p>
                     <p><b>Date: </b>Apr 27</p>
                     <p><b>Time: </b>9am-12pm</p>
+                    <p>Ethically source honey straight from the bees!</p>
                 </div>
             </div>
         </div>
@@ -141,6 +146,7 @@
                     <p><b>Pop Up Location: </b>7867 N Glen Ave</p>
                     <p><b>Date: </b>Apr 12</p>
                     <p><b>Time: </b>12-4pm</p>
+                    <p>Beautiful handmade leather goods.</p>
                 </div>
             </div>
         </div>
@@ -155,6 +161,7 @@
                     <p><b>Pop Up Location: </b>5650 N Vive St</p>
                     <p><b>Date: </b>Feb 01</p>
                     <p><b>Time: </b>12-4pm</p>
+                    <p>Resin flower hair clips and Accessories.</p>
                 </div>
             </div>
         </div>
@@ -169,6 +176,7 @@
                     <p><b>Pop Up Location: </b>5977 N Water Ave</p>
                     <p><b>Date: </b>Mar 25</p>
                     <p><b>Time: </b>12-4pm</p>
+                    <p>Custom card deck of you dreams.</p>
                 </div>
             </div>
         </div>
@@ -200,6 +208,29 @@
                 });
             });
         });
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.getElementById("searchbar");
+            const cards = document.querySelectorAll(".flip-card");
+    
+            searchInput.addEventListener("input", function () {
+                const query = searchInput.value.toLowerCase().trim(); 
+    
+                cards.forEach(card => {
+                    const cardText = card.innerText.toLowerCase(); 
+    
+                    if (cardText.includes(query)) {
+                        card.style.display = "flex"; 
+                    } else {
+                        card.style.display = "none"; 
+                    }
+                });
+            });
+        });
+     
+        
+
     </script>
 
     
