@@ -13,14 +13,6 @@
     text-align: center;
 }
 
-h2{
-    font-family: 'Playfair Display';
-    color: #554542;
-    font-size: 24px;
-    margin-top: 12px;
-    margin-left: 13px;
-}
-
 body{
     background-color: #FFFBF4;
     margin: 0;
@@ -75,6 +67,17 @@ a{
     font-size: 25px;
 }
 
+.mainbutton_design:hover{
+    width: 215px;
+    height: 80px;
+    background-color:  #f8937a;
+    border-color: #f8937a;
+
+}
+.mainbutton_design:hover a{
+    color: #FFFBF4;
+}
+
 .peach-grad{
     max-width: 400px;
     margin-left: 250px;
@@ -91,24 +94,82 @@ a{
     z-index:-1;
 }
 
-.footer-site-name{
-    font-size: 28px;
-    font-family: "Playfair Display";
+
+.main-link{
+    font-family: 'Playfair Display';
     font-weight: bold;
     color: #FFFBF4;
-    padding-right: 500px;
-    margin-top: 7px;
-    margin-bottom: 0;
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 14px;
+    transition: color 0.3s ease;
 }
 
-.footerlink{
-    font-size: 18px;
+.main-link:hover {
+    color: #47352D;
+}
+
+.sub-links{
+    display:flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: #F8937A;
     color: #FFFBF4;
 }
 
-.footer{
+.small-links{
+    padding-left: 20px;
+    color: #FFFBF4;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.small-links:hover {
+    color: #47352D;
+}
+
+.footer {
     margin-top: 75px;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
     background-color: #f8937a;
+    padding: 20px;
+    text-align: center;
+    
 }
+
+.footer-site-name {
+    font-size: 28px;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    color: #FFFBF4;
+    margin-top: 0px;
+   
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footerlink {
+    font-size: 18px;
+    color: #FFFBF4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footerlink:hover {
+    color: #47352D;
+}
+
