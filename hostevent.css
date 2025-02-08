@@ -5,7 +5,6 @@ Sage - #a5c896
 Brown - #554542 */
 
 body{
-    padding-bottom: 50px;
     background-color: #FFFBF4;
     margin: 0; 
 }
@@ -14,6 +13,7 @@ body{
     padding-top: 150px;
     display: flex;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .sitetitle{
@@ -27,7 +27,6 @@ body{
 }
 
 .titlebox{
-    background-color: #FFFBF4;
     color: #554542;
     display: flex;
     justify-content: center;
@@ -35,22 +34,12 @@ body{
     padding-top: 25px;
 }
 
-
 /* form  */
-
 
 label {
     display: block;
     margin-bottom: 10px;
 }
-
-/* select {
-    display: block;
-    margin-bottom: 10px;
-    border:none;
-    border-radius: 5px;
-    background-color: #ffffffff;
-} */
 
 /* Style select field */
 select {
@@ -87,16 +76,6 @@ fieldset {
   
 }
 
-
-/* form { */
-    /* background-color:	#f0eeee; */
-    /* background-color:  #a5c896;
-    width: 600px;
-    padding: 20px;
-    border-radius: 8px; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) */
-/* } */
-
 form {
     display: flex;
     flex-direction: column;
@@ -119,6 +98,7 @@ form {
     justify-content: center; 
      /* center vertically */
     align-items: center;
+    z-index:-1;
 
 }
 
@@ -377,3 +357,18 @@ a{
     margin-bottom: 15px;
 }
 
+.green-grad{
+    max-width: 400px;
+    margin-left: 150px;
+    margin-top: 150px;
+    position:absolute;
+    z-index:-1;
+}
+
+.peach-grad{
+    max-width: 300px;
+    margin-left: 950px;
+    margin-top: 450px;
+    position:absolute;
+    z-index:-1;
+}
